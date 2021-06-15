@@ -1,0 +1,9 @@
+linters:
+  eslint:
+    config: './.eslintrc.json'
+
+
+files:
+  ignore:
+    - 'dist/*'
+    - 'src/phaser.js'
