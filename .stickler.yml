@@ -7,3 +7,4 @@ files:
   ignore:
     - 'dist/*'
     - 'src/phaser.js'
+    - 'src/*.{css,scss}'

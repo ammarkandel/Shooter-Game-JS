@@ -34,11 +34,9 @@ class Player extends Entity {
   onDestroy() {
     this.scene.time.addEvent({
       delay: 1000,
-      callback: function() {
-        this.scene.scene.start('SceneGameOver');
-      },
+      callback: () => this.scene.scene.start('SceneGameOver'),
       callbackScope: this,
-      loop: false
+      loop: false,
     });
   }
 
@@ -53,11 +51,11 @@ class Player extends Entity {
   }
 
   setScore(value) {
-   if (!this.getData('isDead')) {
-     this.setData('score', this.getData('score') + value);
-     storeScores(this.getData('score'));
-   }
- }
+    if (!this.getData('isDead')) {
+      this.setData('score', this.getData('score') + value);
+      storeScores(this.getData('score'));
+    }
+  }
 
   update() {
     this.body.setVelocity(0, 0);
@@ -67,8 +65,7 @@ class Player extends Entity {
     if (this.getData('isShooting')) {
       if (this.getData('timerShootTick') < this.getData('timerShootDelay')) {
         this.setData('timerShootTick', this.getData('timerShootTick') + 1);
-      }
-      else {
+      } else {
         const laser = new PlayerLaser(this.scene, this.x, this.y);
         this.scene.playerLasers.add(laser);
 
