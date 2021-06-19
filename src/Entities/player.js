@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import Entity from './Entity';
 import PlayerLaser from './playerLaser';
+import { storeScores } from '../localStorage';
 
 class Player extends Entity {
   constructor(scene, x, y, key) {
@@ -10,6 +11,8 @@ class Player extends Entity {
     this.setData("isShooting", false);
     this.setData("timerShootDelay", 10);
     this.setData("timerShootTick", this.getData("timerShootDelay") - 1);
+    this.setData('health', 5);
+    this.setData('score', 0);
   }
 
   moveUp() {
@@ -35,6 +38,23 @@ class Player extends Entity {
       loop: false
     });
   }
+
+  updateHealth() {
+    if (this.getData('health') > 0) {
+      this.setData('health', this.getData('health') - 1);
+      this.scene.cameras.main.shake(250, 0.02);
+      return false;
+    }
+
+    return true;
+  }
+
+  setScore(value) {
+   if (!this.getData('isDead')) {
+     this.setData('score', this.getData('score') + value);
+     storeScores(this.getData('score'));
+   }
+ }
 
   update() {
     this.body.setVelocity(0, 0);
