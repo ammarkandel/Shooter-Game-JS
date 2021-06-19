@@ -1,5 +1,4 @@
 import Phaser from 'phaser';
-import Entity from './Entity';
 
 class ScrollingBackground {
   constructor(scene, key, velocityY) {
@@ -13,7 +12,7 @@ class ScrollingBackground {
   }
 
   createLayers() {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 2; i += 1) {
       const layer = this.scene.add.sprite(0, 0, this.key);
       layer.y = (layer.displayHeight * i);
       const flipX = Phaser.Math.Between(0, 10) >= 5 ? -1 : 1;
@@ -29,8 +28,8 @@ class ScrollingBackground {
 
   update() {
     if (this.layers.getChildren()[0].y > 0) {
-      for (let i = 0; i < this.layers.getChildren().length; i++) {
-        let layer = this.layers.getChildren()[i];
+      for (let i = 0; i < this.layers.getChildren().length; i += 1) {
+        const layer = this.layers.getChildren()[i];
         layer.y = (-layer.displayHeight) + (layer.displayHeight * i);
       }
     }

@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import Player from '../Entities/player';
 import ScrollingBackground from '../Entities/scrollingBackground';
 import ImperialShutle from '../Entities/ImperialShutle';
-import TieFighter from '../Entities/tieFighter';
+import GunShip from '../Entities/gunShip';
 import Bomb from '../Entities/Bomb';
 
 class SceneMain extends Phaser.Scene {
@@ -21,11 +21,6 @@ class SceneMain extends Phaser.Scene {
     this.load.spritesheet('tieFighter', 'content/tieFighterp.png', {
       frameWidth: 16,
       frameHeight: 16,
-    });
-
-    this.load.spritesheet('tieAdvanced', 'content/tieAdvanced.png', {
-      frameWidth: 40,
-      frameHeight: 35,
     });
 
     this.load.image('bomb', 'content/sprEnemy1.png');
@@ -102,7 +97,6 @@ class SceneMain extends Phaser.Scene {
       useForce: this.sound.add('useForce', { volume: 0.3 }),
       vaderBreath: this.sound.add('vaderBreath', { volume: 0.1 }),
     };
-
 
     this.song = this.sound.add('battleSound', { volume: 0.1 });
     this.song.play();
@@ -206,7 +200,7 @@ class SceneMain extends Phaser.Scene {
         let enemy = null;
 
         if (Phaser.Math.Between(0, 10) >= 3) {
-          enemy = new TieFighter(
+          enemy = new GunShip(
             this,
             Phaser.Math.Between(0, this.game.config.width),
             0,

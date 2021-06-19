@@ -55,7 +55,7 @@ class SceneLeaderBoard extends Phaser.Scene {
 
     this.getScores = getScoreBoard();
 
-    this.getScores.then(scores => {
+    this.getScores.then((scores) => {
       this.config = {
         color: '#d0c600',
         fontFamily: 'sans-serif',

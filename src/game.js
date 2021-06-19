@@ -23,7 +23,7 @@ const config = {
     SceneMainMenu,
     SceneMain,
     SceneGameOver,
-    SceneLeaderBoard
+    SceneLeaderBoard,
   ],
   pixelArt: true,
   roundPixels: true,
