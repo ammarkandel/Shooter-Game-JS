@@ -1,7 +1,6 @@
 import { localStoreScore, getLocalScores, storeScores } from './localStorage-mock';
 
 describe('Test modules belongin to gameHelper file', () => {
-
   test('Receive [0, 0] when localStorage is empty', async () => {
     const scores = await getLocalScores();
     expect(scores.length).toBe(2);

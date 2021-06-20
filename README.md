@@ -7,11 +7,25 @@
 ## How to play:
 
 - You can play online [live version](https://space-war-game.vercel.app/) or local.
+
 - Click on Download ZIP in repository.
+
 - Extract the game.
+
 - In your terminal, navigate to the game's folder.
+
 - Run 'yarn start'.
+
 - Open in your browser, 'localhost:8000'.
+
+- Use spacebar to fire and arrow keys to move.
+
+
+## Run tests
+
+- In your terminal, navigate to the game's folder.
+
+- Run `yarn test`
 
 ## Technologies used:
 

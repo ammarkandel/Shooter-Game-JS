@@ -18,8 +18,8 @@ class LocalStorageMock {
   removeItem(key) {
     delete this.store[key];
   }
-};
+}
 
-const localStorage = new LocalStorageMock;
+const localStorage = new LocalStorageMock();
 
 export default localStorage;
