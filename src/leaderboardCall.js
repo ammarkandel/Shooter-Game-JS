@@ -20,8 +20,6 @@ const createGame = async () => {
   } catch (err) {
     throw err
   }
-
-  return null;
 };
 
 const submitHighScore = async (userName, scoreValue) => {
@@ -46,7 +44,6 @@ const submitHighScore = async (userName, scoreValue) => {
   } catch (err) {
     throw err
   }
-  return null;
 };
 
 const sorting = (obj) => {
@@ -74,8 +71,6 @@ const getScoreBoard = async () => {
   } catch (err) {
     throw err
   }
-
-  return null;
 };
 
 export { submitHighScore, getScoreBoard, createGame };
