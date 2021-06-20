@@ -45,20 +45,24 @@
 
 #### Enemies:
 
-- ![screenshot](./dist/content/tieFighterp.png)
+- It gives you 300 points when destroyed. ![screenshot](./dist/content/tieFighterp.png)
 
-- ![screenshot](./dist/content/imperialShutle.png)
+- It won't shoot you and will give you 500 points. ![screenshot](./dist/content/imperialShutle.png)
 
-- ![screenshot](./dist/content/sprEnemy1.png)
+- The bomb will follow you until be destroyed or give you some damage. ![screenshot](./dist/content/sprEnemy1.png)
 
 #### Scenes:
 
+- SceneMainMenu
 ![screenshot](./imgs/screenshot_1.png)
 
+- SceneMain
 ![screenshot](./imgs/screenshot_2.png)
 
+- SceneGameOver
 ![screenshot](./imgs/screenshot_3.png)
 
+- SceneLeaderBoard
 ![screenshot](./imgs/screenshot_4.png)
 
 
