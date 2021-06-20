@@ -1,10 +1,10 @@
 import Phaser from 'phaser';
-import SceneMainMenu from '../src/scenes/SceneMainMenu.js';
-import SceneMain from '../src/scenes/SceneMain.js';
-import SceneIntro from '../src/scenes/SceneIntro.js';
-import SceneAbout from '../src/scenes/SceneAbout.js';
-import SceneGameOver from '../src/scenes/SceneGameOver.js';
-import SceneLeaderBoard from '../src/scenes/SceneLeaderBoard.js';
+import SceneMainMenu from '../src/scenes/SceneMainMenu';
+import SceneMain from '../src/scenes/SceneMain';
+import SceneIntro from '../src/scenes/SceneIntro';
+import SceneAbout from '../src/scenes/SceneAbout';
+import SceneGameOver from '../src/scenes/SceneGameOver';
+import SceneLeaderBoard from '../src/scenes/SceneLeaderBoard';
 
 function gameRun() {
   const config = {
