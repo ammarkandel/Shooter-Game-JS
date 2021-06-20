@@ -16,7 +16,7 @@
     "eol-last": "off",
     "import/no-unresolved": "off",
     "import/extensions": "off",
-    "no-return-assign": "off"
+    "consistent-return": "off"
   },
   "ignorePatterns": [
     "dist/",
