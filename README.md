@@ -25,13 +25,13 @@
 
 ## Game design:
 
-![screenshot]('./imgs/screenshot_1.png')
+![screenshot](./imgs/screenshot_1.png)
 
-![screenshot]('./imgs/screenshot_2.png')
+![screenshot](./imgs/screenshot_2.png)
 
-![screenshot]('./imgs/screenshot_3.png')
+![screenshot](./imgs/screenshot_3.png)
 
-![screenshot]('./imgs/screenshot_4.png')
+![screenshot](./imgs/screenshot_4.png)
 
 
 ## Live Version
