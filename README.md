@@ -7,10 +7,10 @@
 ## How to play:
 
 - You can play online [live version](https://space-war-game.vercel.app/) or local.
-- Click on Download ZIP.
+- Click on Download ZIP in repository.
 - Extract the game.
 - In your terminal, navigate to the game's folder.
-- Run 'node server.js'.
+- Run 'yarn start'.
 - Open in your browser, 'localhost:8000'.
 
 ## Technologies used:
@@ -22,6 +22,13 @@
 - Babel
 - Express
 - Vercel to deploy
+
+## Game design:
+
+![screenshot]('./imgs/screenshot-1.png')
+![screenshot]('./imgs/screenshot-2.png')
+![screenshot]('./imgs/screenshot-3.png')
+![screenshot]('./imgs/screenshot-4.png')
 
 
 ## Live Version

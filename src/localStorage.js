@@ -1,9 +1,9 @@
-function localStoreScore(score) {
+const localStoreScore = (score) => {
   const scr = JSON.stringify(score);
   localStorage.setItem('scores', scr);
 }
 
-function getLocalScores() {
+const getLocalScores = () => {
   const score = localStorage.getItem('scores');
   let result = JSON.parse(score);
   if (result === null) {
@@ -13,7 +13,7 @@ function getLocalScores() {
   return result;
 }
 
-function storeScores(score) {
+const storeScores = (score) => {
   const localScore = getLocalScores();
   localScore[0] = score;
   localScore[1] = Math.max(...localScore);

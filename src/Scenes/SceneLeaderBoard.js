@@ -39,7 +39,6 @@ class SceneLeaderBoard extends Phaser.Scene {
     this.createButton(this.btnRestart, 'sprBtnRestart', 'sprBtnRestartHover', 'sprBtnRestartDown');
     this.btnRestart.on('pointerup', () => {
       this.btnRestart.setTexture('sprBtnRestart');
-      this.song.stop();
       this.scene.start('SceneMain');
     }, this);
 
