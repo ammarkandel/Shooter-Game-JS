@@ -39,6 +39,20 @@
 
 ## Game design:
 
+#### Player ship: ![screenshot](./dist/content/xWing.png)
+
+#### Health : ![screenshot](./dist/content/healthComplete.png)
+
+#### Enemies:
+
+- ![screenshot](./dist/content/tieFighterp.png)
+
+- ![screenshot](./dist/content/imperialShutle.png)
+
+- ![screenshot](./dist/content/sprEnemy1.png)
+
+#### Scenes:
+
 ![screenshot](./imgs/screenshot_1.png)
 
 ![screenshot](./imgs/screenshot_2.png)
