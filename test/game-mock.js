@@ -1,10 +1,8 @@
 import Phaser from 'phaser';
-import SceneMainMenu from '../src/scenes/SceneMainMenu';
-import SceneMain from '../src/scenes/SceneMain';
-import SceneIntro from '../src/scenes/SceneIntro';
-import SceneAbout from '../src/scenes/SceneAbout';
-import SceneGameOver from '../src/scenes/SceneGameOver';
-import SceneLeaderBoard from '../src/scenes/SceneLeaderBoard';
+import SceneMainMenu from '../src/Scenes/SceneMainMenu';
+import SceneMain from '../src/Scenes/SceneMain';
+import SceneGameOver from '../src/Scenes/SceneGameOver';
+import SceneLeaderBoard from '../src/Scenes/SceneLeaderBoard';
 
 function gameRun() {
   const config = {
@@ -23,10 +21,8 @@ function gameRun() {
       },
     },
     scene: [
-      SceneIntro,
       SceneMainMenu,
       SceneMain,
-      SceneAbout,
       SceneGameOver,
       SceneLeaderBoard,
     ],
