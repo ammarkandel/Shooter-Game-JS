@@ -1,3 +1,5 @@
+import localStorage from './localStorage';
+
 const localStoreScore = (score) => {
   const scr = JSON.stringify(score);
   localStorage.setItem('scores', scr);
