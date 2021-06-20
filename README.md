@@ -39,11 +39,11 @@
 
 ## Game design:
 
-#### Player ship: ![screenshot](./dist/content/xWing.png)
+### Player ship: ![screenshot](./dist/content/xWing.png)
 
-#### Health : ![screenshot](./dist/content/healthComplete.png)
+### Health : ![screenshot](./dist/content/healthComplete.png)
 
-#### Enemies:
+### Enemies:
 
 - It gives you 300 points when destroyed. ![screenshot](./dist/content/tieFighterp.png)
 
@@ -51,19 +51,16 @@
 
 - The bomb will follow you until be destroyed or give you some damage. ![screenshot](./dist/content/sprEnemy1.png)
 
-#### Scenes:
+### Scenes:
 
-- SceneMainMenu
-![screenshot](./imgs/screenshot_1.png)
+#### SceneMainMenu:: ![screenshot](./imgs/screenshot_1.png)
 
-- SceneMain
-![screenshot](./imgs/screenshot_2.png)
+#### SceneMain:: ![screenshot](./imgs/screenshot_2.png)
 
-- SceneGameOver
-![screenshot](./imgs/screenshot_3.png)
+#### SceneGameOver:: ![screenshot](./imgs/screenshot_3.png)
 
-- SceneLeaderBoard
-![screenshot](./imgs/screenshot_4.png)
+#### SceneLeaderBoard:: ![screenshot](./imgs/screenshot_4.png)
+
 
 
 ## Live Version
