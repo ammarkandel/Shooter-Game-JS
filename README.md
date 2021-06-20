@@ -26,8 +26,11 @@
 ## Game design:
 
 ![screenshot]('./imgs/screenshot-1.png')
+
 ![screenshot]('./imgs/screenshot-2.png')
+
 ![screenshot]('./imgs/screenshot-3.png')
+
 ![screenshot]('./imgs/screenshot-4.png')
 
 

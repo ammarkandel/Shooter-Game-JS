@@ -1,4 +1,4 @@
-async function createGame() {
+const createGame = async () => {
   const game = {
     name: 'Mock Game',
   };
@@ -16,9 +16,9 @@ async function createGame() {
   const answer = await response.json();
 
   return answer;
-}
+};
 
-async function submitHighScore(userName, scoreValue, id) {
+const submitHighScore = async (userName, scoreValue, id) => {
   const submit = {
     user: userName,
     score: scoreValue,
@@ -36,17 +36,17 @@ async function submitHighScore(userName, scoreValue, id) {
   const response = await fetch(address, settings);
   const answer = await response.json();
   return answer;
-}
+};
 
-function sorting(obj) {
+const sorting = (obj) => {
   const array = [];
   for (let i = 0; i < obj.length; i += 1) {
     array.push([obj[i].score, obj[i].user]);
   }
   return Array.from(array).sort((a, b) => b[0] - a[0]);
-}
+};
 
-async function getScoreBoard(id) {
+const getScoreBoard = async (id) => {
   const address = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`;
   const settings = {
     method: 'GET',
@@ -59,6 +59,6 @@ async function getScoreBoard(id) {
   const answer = await response.json();
 
   return sorting(answer.result);
-}
+};
 
 export { submitHighScore, getScoreBoard, createGame };

@@ -18,9 +18,11 @@ const createGame = async () => {
 
     return answer;
   } catch (err) {
-    console.log(err);
+    throw err
   }
-}
+
+  return null;
+};
 
 const submitHighScore = async (userName, scoreValue) => {
   const submit = {
@@ -42,9 +44,10 @@ const submitHighScore = async (userName, scoreValue) => {
     const answer = await response.json();
     return answer;
   } catch (err) {
-    console.log(err);
+    throw err
   }
-}
+  return null;
+};
 
 const sorting = (obj) => {
   const array = [];
@@ -52,7 +55,7 @@ const sorting = (obj) => {
     array.push([obj[i].score, obj[i].user]);
   }
   return Array.from(array).sort((a, b) => b[0] - a[0]);
-}
+};
 
 const getScoreBoard = async () => {
   try {
@@ -69,8 +72,10 @@ const getScoreBoard = async () => {
 
     return sorting(answer.result);
   } catch (err) {
-    console.log(err);
+    throw err
   }
-}
+
+  return null;
+};
 
 export { submitHighScore, getScoreBoard, createGame };
