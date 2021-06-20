@@ -53,15 +53,21 @@
 
 ### Scenes:
 
-#### SceneMainMenu:: ![screenshot](./imgs/screenshot_1.png)
+#### SceneMainMenu::
 
-#### SceneMain:: ![screenshot](./imgs/screenshot_2.png)
+![screenshot](./imgs/screenshot_1.png)
 
-#### SceneGameOver:: ![screenshot](./imgs/screenshot_3.png)
+#### SceneMain::
 
-#### SceneLeaderBoard:: ![screenshot](./imgs/screenshot_4.png)
+![screenshot](./imgs/screenshot_2.png)
 
+#### SceneGameOver::
 
+![screenshot](./imgs/screenshot_3.png)
+
+#### SceneLeaderBoard::
+
+![screenshot](./imgs/screenshot_4.png)
 
 ## Live Version
 
