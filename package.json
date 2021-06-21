@@ -1,0 +1,56 @@
+{
+  "name": "space_shooter_game",
+  "version": "1.0.0",
+  "description": "Space shooter game with javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "jest-watch": "jest --watch",
+    "jest-init": "jest --init",
+    "install-web": "npm install --save-dev webpack",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "npx-fix": "npx eslint src/  --fix",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Ammar Kandel",
+  "license": "ISC",
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "setupFiles": [
+      "jest-canvas-mock"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/test/mocks/styleMock.js",
+      "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/mocks/fileMock.js"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.0.2",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "25.1.0",
+    "jest-canvas-mock": "^2.3.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "phaser": "^3.55.2",
+    "phaser3-project-template": "^1.0.9"
+  }
+}
