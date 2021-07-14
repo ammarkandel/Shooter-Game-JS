@@ -4,6 +4,10 @@
 
 ### This game has 4 scenes: gameOver, leaderBoard, main and mainMenu.
 
+## About
+
+### This project's objective was to build a shooter game similar to York Computer's [tutorial](https://learn.yorkcs.com/category/tutorials/gamedev/phaser-3/build-a-space-shooter-with-phaser-3/). So I used the main idea but I created my own shooter game.
+
 ## How to play:
 
 - You can play online [live version](https://space-war-game.vercel.app/) or local.
